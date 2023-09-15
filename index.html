@@ -20,7 +20,7 @@
     var element = document.getElementById("main_iframe");
     
     element.addEventListener("load", function(event) {
-      let url = document.getElementById("example1").contentWindow.location.href
+      let url = element.contentWindow.location.href
       document.getElementById("text").textContent = url;
     });
   </script>
